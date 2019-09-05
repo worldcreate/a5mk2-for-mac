@@ -24,7 +24,7 @@ class a5mk2SDKTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-        let entites: Array<Entity> = [Entity("test1")]
+        let entites: Array<Entity> = [Entity(phisicalName: "test1", logicalName: "test")]
         
         XCTAssertEqual(reader.readAllEntities(), entites)
     }

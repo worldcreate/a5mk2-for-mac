@@ -10,12 +10,15 @@ import Foundation
 
 class Entity: Equatable {
     static func == (lhs: Entity, rhs: Entity) -> Bool {
-        lhs.pName == rhs.pName
+        lhs.pName == rhs.pName &&
+            lhs.lName == rhs.lName
     }
     
     
     private let pName: String
-    init(_ pName: String) {
+    private let lName: String
+    init(phisicalName pName: String, logicalName lName: String) {
         self.pName = pName
+        self.lName = lName
     }
 }

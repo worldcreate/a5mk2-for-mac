@@ -10,11 +10,17 @@ import Foundation
 
 class EntityBuilder {
     var pName: String? = nil
-    func setPName(_ pname: String) {
+    var lName: String? = nil
+    
+    func setPhisicalName(_ pname: String) {
         self.pName = pname
     }
     
+    func setLogicalName(_ lname: String) {
+        self.lName = lname
+    }
+    
     func build() -> Entity {
-        return Entity(self.pName!)
+        return Entity(phisicalName: self.pName!, logicalName: self.lName!)
     }
 }

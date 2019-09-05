@@ -45,7 +45,11 @@ class A5MK2Reader {
                         }
                         if (line.contains("PName")) {
                             let element = line.components(separatedBy: "=")
-                            builder.setPName(element[1])
+                            builder.setPhisicalName(element[1])
+                        }
+                        if (line.contains("LName")) {
+                            let element = line.components(separatedBy: "=")
+                            builder.setLogicalName(element[1])
                         }
                     }
                     entities.append(builder.build())
@@ -62,8 +66,15 @@ class A5MK2Reader {
     }
     
     class LineReader {
+        private let lines: Array<String>
         init(text: String) {
-            
+            var lines: Array<String> = []
+            text.enumerateLines { (line, stop) in
+                lines.append(line)
+            }
+            self.lines = lines
         }
+        
+        
     }
 }
