@@ -7,3 +7,14 @@
 //
 
 import Foundation
+
+class EntityBuilder {
+    var pName: String? = nil
+    func setPName(_ pname: String) {
+        self.pName = pname
+    }
+    
+    func build() -> Entity {
+        return Entity(self.pName!)
+    }
+}

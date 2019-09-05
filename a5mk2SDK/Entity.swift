@@ -7,3 +7,15 @@
 //
 
 import Foundation
+
+class Entity: Equatable {
+    static func == (lhs: Entity, rhs: Entity) -> Bool {
+        lhs.pName == rhs.pName
+    }
+    
+    
+    private let pName: String
+    init(_ pName: String) {
+        self.pName = pName
+    }
+}

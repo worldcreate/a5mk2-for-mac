@@ -11,7 +11,81 @@
 		05427213231FB0EF00A6BAB6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05427212231FB0EF00A6BAB6 /* ViewController.swift */; };
 		05427215231FB0F100A6BAB6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 05427214231FB0F100A6BAB6 /* Assets.xcassets */; };
 		05427218231FB0F100A6BAB6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 05427216231FB0F100A6BAB6 /* Main.storyboard */; };
+		0542722E231FB43600A6BAB6 /* core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05427225231FB43500A6BAB6 /* core.framework */; };
+		05427235231FB43600A6BAB6 /* coreTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05427234231FB43600A6BAB6 /* coreTests.swift */; };
+		05427237231FB43600A6BAB6 /* core.h in Headers */ = {isa = PBXBuildFile; fileRef = 05427227231FB43500A6BAB6 /* core.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0542723A231FB43600A6BAB6 /* core.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05427225231FB43500A6BAB6 /* core.framework */; };
+		0542723B231FB43600A6BAB6 /* core.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05427225231FB43500A6BAB6 /* core.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05427251231FB55F00A6BAB6 /* a5mk2SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05427248231FB55F00A6BAB6 /* a5mk2SDK.framework */; };
+		05427258231FB55F00A6BAB6 /* a5mk2SDKTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05427257231FB55F00A6BAB6 /* a5mk2SDKTests.swift */; };
+		0542725A231FB55F00A6BAB6 /* a5mk2SDK.h in Headers */ = {isa = PBXBuildFile; fileRef = 0542724A231FB55F00A6BAB6 /* a5mk2SDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0542725D231FB55F00A6BAB6 /* a5mk2SDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05427248231FB55F00A6BAB6 /* a5mk2SDK.framework */; };
+		0542725E231FB55F00A6BAB6 /* a5mk2SDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 05427248231FB55F00A6BAB6 /* a5mk2SDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		05427266231FBB1A00A6BAB6 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05427265231FBB1A00A6BAB6 /* Entity.swift */; };
+		05427268231FBB9D00A6BAB6 /* A5MK2Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05427267231FBB9D00A6BAB6 /* A5MK2Reader.swift */; };
+		0542726A232027C500A6BAB6 /* EntityBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05427269232027C500A6BAB6 /* EntityBuilder.swift */; };
+		059C96542320B8B100314D77 /* test.a5er in Resources */ = {isa = PBXBuildFile; fileRef = 059C96532320B8B100314D77 /* test.a5er */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0542722F231FB43600A6BAB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05427205231FB0EF00A6BAB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05427224231FB43500A6BAB6;
+			remoteInfo = core;
+		};
+		05427231231FB43600A6BAB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05427205231FB0EF00A6BAB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0542720C231FB0EF00A6BAB6;
+			remoteInfo = a5mk2_mirror;
+		};
+		05427238231FB43600A6BAB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05427205231FB0EF00A6BAB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05427224231FB43500A6BAB6;
+			remoteInfo = core;
+		};
+		05427252231FB55F00A6BAB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05427205231FB0EF00A6BAB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05427247231FB55F00A6BAB6;
+			remoteInfo = a5mk2SDK;
+		};
+		05427254231FB55F00A6BAB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05427205231FB0EF00A6BAB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0542720C231FB0EF00A6BAB6;
+			remoteInfo = a5mk2_mirror;
+		};
+		0542725B231FB55F00A6BAB6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 05427205231FB0EF00A6BAB6 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 05427247231FB55F00A6BAB6;
+			remoteInfo = a5mk2SDK;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0542723C231FB43600A6BAB6 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				0542725E231FB55F00A6BAB6 /* a5mk2SDK.framework in Embed Frameworks */,
+				0542723B231FB43600A6BAB6 /* core.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		0542720D231FB0EF00A6BAB6 /* a5mk2_mirror.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = a5mk2_mirror.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -21,6 +95,22 @@
 		05427217231FB0F100A6BAB6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		05427219231FB0F100A6BAB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0542721A231FB0F100A6BAB6 /* a5mk2_mirror.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = a5mk2_mirror.entitlements; sourceTree = "<group>"; };
+		05427225231FB43500A6BAB6 /* core.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = core.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		05427227231FB43500A6BAB6 /* core.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = core.h; sourceTree = "<group>"; };
+		05427228231FB43500A6BAB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0542722D231FB43500A6BAB6 /* coreTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = coreTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05427234231FB43600A6BAB6 /* coreTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = coreTests.swift; sourceTree = "<group>"; };
+		05427236231FB43600A6BAB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05427248231FB55F00A6BAB6 /* a5mk2SDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = a5mk2SDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0542724A231FB55F00A6BAB6 /* a5mk2SDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = a5mk2SDK.h; sourceTree = "<group>"; };
+		0542724B231FB55F00A6BAB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05427250231FB55F00A6BAB6 /* a5mk2SDKTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = a5mk2SDKTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		05427257231FB55F00A6BAB6 /* a5mk2SDKTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = a5mk2SDKTests.swift; sourceTree = "<group>"; };
+		05427259231FB55F00A6BAB6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		05427265231FBB1A00A6BAB6 /* Entity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		05427267231FBB9D00A6BAB6 /* A5MK2Reader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = A5MK2Reader.swift; sourceTree = "<group>"; };
+		05427269232027C500A6BAB6 /* EntityBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityBuilder.swift; sourceTree = "<group>"; };
+		059C96532320B8B100314D77 /* test.a5er */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = test.a5er; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -28,6 +118,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0542725D231FB55F00A6BAB6 /* a5mk2SDK.framework in Frameworks */,
+				0542723A231FB43600A6BAB6 /* core.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05427222231FB43500A6BAB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0542722A231FB43500A6BAB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0542722E231FB43600A6BAB6 /* core.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05427245231FB55F00A6BAB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0542724D231FB55F00A6BAB6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05427251231FB55F00A6BAB6 /* a5mk2SDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +160,10 @@
 			isa = PBXGroup;
 			children = (
 				0542720F231FB0EF00A6BAB6 /* a5mk2_mirror */,
+				05427226231FB43500A6BAB6 /* core */,
+				05427233231FB43600A6BAB6 /* coreTests */,
+				05427249231FB55F00A6BAB6 /* a5mk2SDK */,
+				05427256231FB55F00A6BAB6 /* a5mk2SDKTests */,
 				0542720E231FB0EF00A6BAB6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -46,6 +172,10 @@
 			isa = PBXGroup;
 			children = (
 				0542720D231FB0EF00A6BAB6 /* a5mk2_mirror.app */,
+				05427225231FB43500A6BAB6 /* core.framework */,
+				0542722D231FB43500A6BAB6 /* coreTests.xctest */,
+				05427248231FB55F00A6BAB6 /* a5mk2SDK.framework */,
+				05427250231FB55F00A6BAB6 /* a5mk2SDKTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -63,7 +193,66 @@
 			path = a5mk2_mirror;
 			sourceTree = "<group>";
 		};
+		05427226231FB43500A6BAB6 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				05427227231FB43500A6BAB6 /* core.h */,
+				05427228231FB43500A6BAB6 /* Info.plist */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		05427233231FB43600A6BAB6 /* coreTests */ = {
+			isa = PBXGroup;
+			children = (
+				05427234231FB43600A6BAB6 /* coreTests.swift */,
+				05427236231FB43600A6BAB6 /* Info.plist */,
+			);
+			path = coreTests;
+			sourceTree = "<group>";
+		};
+		05427249231FB55F00A6BAB6 /* a5mk2SDK */ = {
+			isa = PBXGroup;
+			children = (
+				0542724A231FB55F00A6BAB6 /* a5mk2SDK.h */,
+				0542724B231FB55F00A6BAB6 /* Info.plist */,
+				05427265231FBB1A00A6BAB6 /* Entity.swift */,
+				05427267231FBB9D00A6BAB6 /* A5MK2Reader.swift */,
+				05427269232027C500A6BAB6 /* EntityBuilder.swift */,
+			);
+			path = a5mk2SDK;
+			sourceTree = "<group>";
+		};
+		05427256231FB55F00A6BAB6 /* a5mk2SDKTests */ = {
+			isa = PBXGroup;
+			children = (
+				059C96532320B8B100314D77 /* test.a5er */,
+				05427257231FB55F00A6BAB6 /* a5mk2SDKTests.swift */,
+				05427259231FB55F00A6BAB6 /* Info.plist */,
+			);
+			path = a5mk2SDKTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		05427220231FB43500A6BAB6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05427237231FB43600A6BAB6 /* core.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05427243231FB55F00A6BAB6 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0542725A231FB55F00A6BAB6 /* a5mk2SDK.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		0542720C231FB0EF00A6BAB6 /* a5mk2_mirror */ = {
@@ -73,15 +262,92 @@
 				05427209231FB0EF00A6BAB6 /* Sources */,
 				0542720A231FB0EF00A6BAB6 /* Frameworks */,
 				0542720B231FB0EF00A6BAB6 /* Resources */,
+				0542723C231FB43600A6BAB6 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				05427239231FB43600A6BAB6 /* PBXTargetDependency */,
+				0542725C231FB55F00A6BAB6 /* PBXTargetDependency */,
 			);
 			name = a5mk2_mirror;
 			productName = a5mk2_mirror;
 			productReference = 0542720D231FB0EF00A6BAB6 /* a5mk2_mirror.app */;
 			productType = "com.apple.product-type.application";
+		};
+		05427224231FB43500A6BAB6 /* core */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05427241231FB43600A6BAB6 /* Build configuration list for PBXNativeTarget "core" */;
+			buildPhases = (
+				05427220231FB43500A6BAB6 /* Headers */,
+				05427221231FB43500A6BAB6 /* Sources */,
+				05427222231FB43500A6BAB6 /* Frameworks */,
+				05427223231FB43500A6BAB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = core;
+			productName = core;
+			productReference = 05427225231FB43500A6BAB6 /* core.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0542722C231FB43500A6BAB6 /* coreTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05427242231FB43600A6BAB6 /* Build configuration list for PBXNativeTarget "coreTests" */;
+			buildPhases = (
+				05427229231FB43500A6BAB6 /* Sources */,
+				0542722A231FB43500A6BAB6 /* Frameworks */,
+				0542722B231FB43500A6BAB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05427230231FB43600A6BAB6 /* PBXTargetDependency */,
+				05427232231FB43600A6BAB6 /* PBXTargetDependency */,
+			);
+			name = coreTests;
+			productName = coreTests;
+			productReference = 0542722D231FB43500A6BAB6 /* coreTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		05427247231FB55F00A6BAB6 /* a5mk2SDK */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0542725F231FB55F00A6BAB6 /* Build configuration list for PBXNativeTarget "a5mk2SDK" */;
+			buildPhases = (
+				05427243231FB55F00A6BAB6 /* Headers */,
+				05427244231FB55F00A6BAB6 /* Sources */,
+				05427245231FB55F00A6BAB6 /* Frameworks */,
+				05427246231FB55F00A6BAB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = a5mk2SDK;
+			productName = a5mk2SDK;
+			productReference = 05427248231FB55F00A6BAB6 /* a5mk2SDK.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		0542724F231FB55F00A6BAB6 /* a5mk2SDKTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 05427262231FB55F00A6BAB6 /* Build configuration list for PBXNativeTarget "a5mk2SDKTests" */;
+			buildPhases = (
+				0542724C231FB55F00A6BAB6 /* Sources */,
+				0542724D231FB55F00A6BAB6 /* Frameworks */,
+				0542724E231FB55F00A6BAB6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				05427253231FB55F00A6BAB6 /* PBXTargetDependency */,
+				05427255231FB55F00A6BAB6 /* PBXTargetDependency */,
+			);
+			name = a5mk2SDKTests;
+			productName = a5mk2SDKTests;
+			productReference = 05427250231FB55F00A6BAB6 /* a5mk2SDKTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -95,6 +361,21 @@
 				TargetAttributes = {
 					0542720C231FB0EF00A6BAB6 = {
 						CreatedOnToolsVersion = 11.0;
+					};
+					05427224231FB43500A6BAB6 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					0542722C231FB43500A6BAB6 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 0542720C231FB0EF00A6BAB6;
+					};
+					05427247231FB55F00A6BAB6 = {
+						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
+					};
+					0542724F231FB55F00A6BAB6 = {
+						CreatedOnToolsVersion = 11.0;
+						TestTargetID = 0542720C231FB0EF00A6BAB6;
 					};
 				};
 			};
@@ -112,6 +393,10 @@
 			projectRoot = "";
 			targets = (
 				0542720C231FB0EF00A6BAB6 /* a5mk2_mirror */,
+				05427224231FB43500A6BAB6 /* core */,
+				0542722C231FB43500A6BAB6 /* coreTests */,
+				05427247231FB55F00A6BAB6 /* a5mk2SDK */,
+				0542724F231FB55F00A6BAB6 /* a5mk2SDKTests */,
 			);
 		};
 /* End PBXProject section */
@@ -123,6 +408,35 @@
 			files = (
 				05427215231FB0F100A6BAB6 /* Assets.xcassets in Resources */,
 				05427218231FB0F100A6BAB6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05427223231FB43500A6BAB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0542722B231FB43500A6BAB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05427246231FB55F00A6BAB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0542724E231FB55F00A6BAB6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				059C96542320B8B100314D77 /* test.a5er in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,7 +452,73 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		05427221231FB43500A6BAB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05427229231FB43500A6BAB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05427235231FB43600A6BAB6 /* coreTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		05427244231FB55F00A6BAB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05427266231FBB1A00A6BAB6 /* Entity.swift in Sources */,
+				0542726A232027C500A6BAB6 /* EntityBuilder.swift in Sources */,
+				05427268231FBB9D00A6BAB6 /* A5MK2Reader.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0542724C231FB55F00A6BAB6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05427258231FB55F00A6BAB6 /* a5mk2SDKTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		05427230231FB43600A6BAB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05427224231FB43500A6BAB6 /* core */;
+			targetProxy = 0542722F231FB43600A6BAB6 /* PBXContainerItemProxy */;
+		};
+		05427232231FB43600A6BAB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0542720C231FB0EF00A6BAB6 /* a5mk2_mirror */;
+			targetProxy = 05427231231FB43600A6BAB6 /* PBXContainerItemProxy */;
+		};
+		05427239231FB43600A6BAB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05427224231FB43500A6BAB6 /* core */;
+			targetProxy = 05427238231FB43600A6BAB6 /* PBXContainerItemProxy */;
+		};
+		05427253231FB55F00A6BAB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05427247231FB55F00A6BAB6 /* a5mk2SDK */;
+			targetProxy = 05427252231FB55F00A6BAB6 /* PBXContainerItemProxy */;
+		};
+		05427255231FB55F00A6BAB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0542720C231FB0EF00A6BAB6 /* a5mk2_mirror */;
+			targetProxy = 05427254231FB55F00A6BAB6 /* PBXContainerItemProxy */;
+		};
+		0542725C231FB55F00A6BAB6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 05427247231FB55F00A6BAB6 /* a5mk2SDK */;
+			targetProxy = 0542725B231FB55F00A6BAB6 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		05427216231FB0F100A6BAB6 /* Main.storyboard */ = {
@@ -268,6 +648,7 @@
 		0542721E231FB0F100A6BAB6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = a5mk2_mirror/a5mk2_mirror.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -289,6 +670,7 @@
 		0542721F231FB0F100A6BAB6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = a5mk2_mirror/a5mk2_mirror.entitlements;
 				CODE_SIGN_STYLE = Automatic;
@@ -304,6 +686,197 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "zyyx.a5mk2-mirror";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		0542723D231FB43600A6BAB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = HPZU6DMW36;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = core/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zyyx.core;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		0542723E231FB43600A6BAB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = HPZU6DMW36;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = core/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zyyx.core;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		0542723F231FB43600A6BAB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HPZU6DMW36;
+				INFOPLIST_FILE = coreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zyyx.coreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/a5mk2_mirror.app/Contents/MacOS/a5mk2_mirror";
+			};
+			name = Debug;
+		};
+		05427240231FB43600A6BAB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HPZU6DMW36;
+				INFOPLIST_FILE = coreTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zyyx.coreTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/a5mk2_mirror.app/Contents/MacOS/a5mk2_mirror";
+			};
+			name = Release;
+		};
+		05427260231FB55F00A6BAB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = HPZU6DMW36;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = a5mk2SDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zyyx.a5mk2SDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		05427261231FB55F00A6BAB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = HPZU6DMW36;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = a5mk2SDK/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zyyx.a5mk2SDK;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		05427263231FB55F00A6BAB6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HPZU6DMW36;
+				INFOPLIST_FILE = a5mk2SDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zyyx.a5mk2SDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/a5mk2_mirror.app/Contents/MacOS/a5mk2_mirror";
+			};
+			name = Debug;
+		};
+		05427264231FB55F00A6BAB6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = HPZU6DMW36;
+				INFOPLIST_FILE = a5mk2SDKTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = zyyx.a5mk2SDKTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/a5mk2_mirror.app/Contents/MacOS/a5mk2_mirror";
 			};
 			name = Release;
 		};
@@ -324,6 +897,42 @@
 			buildConfigurations = (
 				0542721E231FB0F100A6BAB6 /* Debug */,
 				0542721F231FB0F100A6BAB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05427241231FB43600A6BAB6 /* Build configuration list for PBXNativeTarget "core" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0542723D231FB43600A6BAB6 /* Debug */,
+				0542723E231FB43600A6BAB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05427242231FB43600A6BAB6 /* Build configuration list for PBXNativeTarget "coreTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0542723F231FB43600A6BAB6 /* Debug */,
+				05427240231FB43600A6BAB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0542725F231FB55F00A6BAB6 /* Build configuration list for PBXNativeTarget "a5mk2SDK" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05427260231FB55F00A6BAB6 /* Debug */,
+				05427261231FB55F00A6BAB6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		05427262231FB55F00A6BAB6 /* Build configuration list for PBXNativeTarget "a5mk2SDKTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				05427263231FB55F00A6BAB6 /* Debug */,
+				05427264231FB55F00A6BAB6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

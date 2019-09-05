@@ -10,6 +10,8 @@ import XCTest
 @testable import a5mk2SDK
 
 class a5mk2SDKTests: XCTestCase {
+    
+    let reader = A5MK2Reader(Bundle(for: a5mk2SDKTests.self).url(forResource: "test", withExtension: "a5er")!)
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
@@ -22,13 +24,9 @@ class a5mk2SDKTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
-        }
+        let entites: Array<Entity> = [Entity("test1")]
+        
+        XCTAssertEqual(reader.readAllEntities(), entites)
     }
 
 }
