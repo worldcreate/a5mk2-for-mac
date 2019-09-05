@@ -22,9 +22,8 @@ class A5MK2Reader {
             let reader = LineReader(text)
 
             var entities: Array<Entity> = []
-            while(reader.hasNext()) {
-                let line = reader.next()
-                if line == "[Entity]" {
+            reader.forEach {
+                if $0 == "[Entity]" {
                     let entityBuilder = EntityBuilder(reader)
                     entities.append(entityBuilder.build())
                 }
@@ -38,25 +37,22 @@ class A5MK2Reader {
         return []
     }
 
-    class LineReader {
-        private let lines: Array<String>
+    class LineReader: Sequence, IteratorProtocol {
+        typealias Element = String
+
+        private let lines: Array<Element>
         private var count = 0
         init(_ text: String) {
-            var lines: Array<String> = []
-            text.enumerateLines { (line, stop) in
+            var lines: Array<Element> = []
+            text.enumerateLines { (line, _) in
                 lines.append(line)
             }
             self.lines = lines
         }
-        
-        func hasNext() -> Bool {
-            self.lines.count > count
-        }
-        
-        func next() -> String {
-            let line = self.lines[self.count]
-            self.count += 1
-            return line
+
+        func next() -> Element? {
+            defer { count += 1 }
+            return self.lines.count > count ? self.lines[self.count] : nil
         }
     }
 }

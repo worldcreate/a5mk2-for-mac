@@ -26,17 +26,16 @@ class EntityBuilder {
     }
     
     func build() -> Entity {
-        while(self.reader.hasNext()) {
-            let line = self.reader.next()
-            if (line.isEmpty) {
-                break
+        self.reader.forEach {
+            if ($0.isEmpty) {
+                return
             }
-            if (line.contains("PName")) {
-                let element = line.components(separatedBy: "=")
+
+            let element = $0.components(separatedBy: "=")
+            if ($0.contains("PName")) {
                 self.setPhisicalName(element[1])
             }
-            if (line.contains("LName")) {
-                let element = line.components(separatedBy: "=")
+            if ($0.contains("LName")) {
                 self.setLogicalName(element[1])
             }
         }
