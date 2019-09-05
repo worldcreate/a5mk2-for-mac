@@ -13,47 +13,20 @@ class A5MK2Reader {
     init(_ filePath: URL) {
         self.filePath = filePath
     }
-    
+
     public func readAllEntities() -> Array<Entity> {
         
         do {
 
             let text = try String( contentsOf: self.filePath, encoding: String.Encoding.utf8 )
-            var lines: Array<String> = []
-            text.enumerateLines { (line, stop) in
-                lines.append(line)
-            }
-            
-            enum State: Int {
-                case ENTITY
-                case SKIP
-            }
-            
-            var state: State = .SKIP
+            let reader = LineReader(text)
+
             var entities: Array<Entity> = []
-            for i in 0..<lines.count {
-                if (state == .SKIP) {
-                    if (lines[i] == "[Entity]") {
-                        state = .ENTITY
-                        continue
-                    }
-                } else if (state == .ENTITY) {
-                    let builder = EntityBuilder()
-                    for line in lines[i...] {
-                        if (line.isEmpty) {
-                            break
-                        }
-                        if (line.contains("PName")) {
-                            let element = line.components(separatedBy: "=")
-                            builder.setPhisicalName(element[1])
-                        }
-                        if (line.contains("LName")) {
-                            let element = line.components(separatedBy: "=")
-                            builder.setLogicalName(element[1])
-                        }
-                    }
-                    entities.append(builder.build())
-                    state = .SKIP
+            while(reader.hasNext()) {
+                let line = reader.next()
+                if line == "[Entity]" {
+                    let entityBuilder = EntityBuilder(reader)
+                    entities.append(entityBuilder.build())
                 }
             }
 
@@ -61,13 +34,14 @@ class A5MK2Reader {
         } catch {
             print(error)
         }
-        
+
         return []
     }
-    
+
     class LineReader {
         private let lines: Array<String>
-        init(text: String) {
+        private var count = 0
+        init(_ text: String) {
             var lines: Array<String> = []
             text.enumerateLines { (line, stop) in
                 lines.append(line)
@@ -75,6 +49,14 @@ class A5MK2Reader {
             self.lines = lines
         }
         
+        func hasNext() -> Bool {
+            self.lines.count > count
+        }
         
+        func next() -> String {
+            let line = self.lines[self.count]
+            self.count += 1
+            return line
+        }
     }
 }
